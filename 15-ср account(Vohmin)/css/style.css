@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --blue: #455cc6;
+    --while: #ffffff;
+    --violet: #516cd5;
+    --yellow-grey: #e0e0e0;
+    --purple: #bdc2e0;
+    --dark-white: #f8f9fe;
+    --grey: #e4e5ea;
+    --darl-grey: #a7a7a7;
+    --dark: #000;
+}
+
+body{
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+}
+
+  .separator{
+    width: 15.2vw;
+    height: 108.5vh;
+    background: var(--blue);
+    text-align: center;
+  }
+
+  .logo{
+    margin: 50px 50px 40px 50px;
+    color: var(--dark-white);
+    text-transform: lowercase;
+    letter-spacing: 2.7px;
+  }
+
+  .navigation{
+    list-style: none;
+    text-align: start;
+    padding: 0px 3.5vw;
+  }
+
+  .hover{
+    background: #516cd5;
+    text-align: center;
+    padding: 22px 0px;
+    padding-right: 10px;
+}
+
+  .navigation-button{
+    color: var(--dark-white);
+    margin: 36px 0px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 15px;
+
+}
+
+.navigation :nth-child(3){
+    margin-left: 30px;
+    background:  var(--violet);
+    
+}
+
+  .navigation .fa-solid{
+    color: var(--dark-white);
+    margin-right: 10px;
+  }
+
+  a{
+    text-decoration:  none;
+    color: var(--dark-white);
+  }
+
+  .search{
+    border: 1px solid var(--purple);
+    width: 26.2vw;
+    padding: 10px;
+    margin: 20px 50px;
+    border-radius: 8px;
+    font-weight: 600;
+    background-image: url(../img/search.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 24.5vw;
+    height: 4vh;
+  }
+
+  .search:focus{
+    border: 1px solid var(--blue);
+    background: var(--while);
+  }
+
+ .registration{
+    width: 85vw;
+    height: 100vh;
+    
+ }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .account{
+    display: flex;
+    margin: 10px 15px;
+  }
+.account .fa-solid{
+    border: 1px solid var(--grey);
+    padding: 10px;
+    margin: 10px 15px;
+    border-radius: 50px;
+}
+
+ .photo{
+    margin: 0px 10px;
+    margin-top: 10px;
+    border-radius: 50%;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+ }
+ .name{
+    padding: 10px;
+    margin: 0px 5px;
+    margin-top: 10px;
+ }
+
+ .profile{
+    background: var(--dark-white);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+ }
+
+
+
+ .block-navigation{
+    background: var(--while);
+    width: 32vh;
+    box-shadow: 0px 0px 10px 1px var(--yellow-grey);
+    padding: 20px;
+    font-weight: 600;
+    font-size: 19px;
+    margin: 10px 49px 30px 30px;
+    border-radius: 10px;
+ }
+
+
+
+ .block-navigation__text{
+    font-size: 14px;
+    color: var(--darl-grey);
+    font-weight: 500;
+    margin-top: 10px;
+ }
+
+ .block-navigation:hover{
+    border: 1px solid var(--blue);
+ }
+
+ .avatar{
+    background: var(--while);
+    width: 120vh;
+    box-shadow: 0px 0px 10px 1px var(--yellow-grey);
+    padding: 18px;
+    padding-bottom: 16px;
+    font-weight: 600;
+    font-size: 19px;
+    margin: 10px 0px 30px 30px;
+    border-radius: 9px;
+    display: flex;
+ }
+
+ .photo-ac{
+    border-radius: 50%;
+    height: 90px;
+ }
+
+.block-avatar{
+    padding: 20px;
+    letter-spacing: 0.3px;
+}
+
+ .block-avatar__text{
+    font-size: 14px;
+    color: var(--darl-grey);
+    font-weight: 500;
+    margin-top: 10px;
+    letter-spacing: 0px;
+ }
+
+ .account-file{
+    display: flex;
+    margin-top: 26px;
+    margin-bottom: 29px;
+    padding-right: 20px;
+    border: 1px solid var(--purple);
+    border-radius: 7px;
+    padding: 8px;
+    padding-left: 12px;
+ }
+
+.avatar-button{
+    margin: 28px 0px 32px 20px;
+    border-radius: 8px;
+    color: var(--while);
+    background: var(--violet);
+    padding: 0px 50px;
+    letter-spacing: 0.3px;
+}
+
+.avatar-button:active{
+    box-shadow: 0px 0px 5px 1px var(--darl-grey);
+}
+
+.avatar-button:hover{
+  background: var(--violet);
+}
+
+.information{
+    background: var(--while);
+    width: 120vh;
+    box-shadow: 0px 0px 10px 1px var(--yellow-grey);
+    padding: 18px;
+    padding-bottom: 16px;
+    font-weight: 600;
+    font-size: 19px;
+    margin: 10px 0px 30px 30px;
+    border-radius: 9px;
+    
+}
+
+
+.form_block-container{
+    display: flex;
+    gap: 50px;
+ 
+}
+
+.info{
+    font-size: 25px;
+    margin-bottom: 29px;
+}
+
+
+label{
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.fname, .email{
+    border: 1px solid var(--purple);
+    border-radius: 7px;
+    padding: 16px 15px;
+    padding-right: 345px;
+    margin-top: 11px;
+    margin-bottom: 21px;
+}
+
+
+.country{
+    border: 1px solid var(--purple);
+    border-radius: 7px;
+    padding: 15px 15px;
+    padding-right: 415px;
+    margin-top: 10px;
+    margin-bottom: 21px;
+
+}
+
+.city{
+    border: 1px solid var(--purple);
+    border-radius: 7px;
+    padding: 15px 15px;
+    width: 33rem;
+    margin-top: 10px;
+    margin-bottom: 21px;
+   
+}
+
+.email:hover, .country:hover, .city:hover, .fname:hover, .address:hover{
+    border: 1px solid var(--blue);
+}
+
+.email:focus, .country:focus, .city:focus, .fname:focus, .address:focus{
+    border: 1px solid var(--blue);
+}
+
+.address{
+    border: 1px solid var(--purple);
+    border-radius: 7px;
+    padding: 14px 15px;
+    width: 327.5%;
+    margin-top: 9px;
+    margin-bottom: 21px;
+}
+
+.form_block-checkbox{
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.text-field{
+  margin-top: 10px;
+  border: 2px solid var(--grey);
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  font-size: 16px;
+  height: 6rem;
+}
+
+
+textarea:hover{
+  border: 1px solid var(--blue);
+}
+
+textarea:focus{
+  border: 1px solid var(--blue);
+}
+
+
+.ubdate-b{
+    margin-top: 20px;
+    height: 2rem;
+    border-radius: 8px;
+    color: var(--while);
+    background: var(--violet);
+    padding: 0px 50px;
+    letter-spacing: 0.3px;
+}
+
+.ubdate-b:active{
+  box-shadow: 0px 0px 5px 1px var(--darl-grey);
+}
+.ubdate-b:hover{
+  background: var(--violet);
+}
+
+
+.form_block-checkbox input{
+  height: 20px;
+  width: 20px;
+}

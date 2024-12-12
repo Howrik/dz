@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельные формы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f2cc8d7f38.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+        <div class="separator">
+            <h2 class="logo">Weblance</h2>
+            <ul class="navigation">
+                <li class="navigation-button"><i class="fa-solid fa-file-lines"></i><a href="">Портфолио</a></li>
+                <li class="navigation-button"><i class="fa-solid fa-message"></i><a href="">Общение</a></li>
+                <li class="navigation-button hover"><i class="fa-solid fa-user"></i><a href="">Профиль</a></li>
+                <li class="navigation-button"><i class="fa-solid fa-link"></i><a href="">Ссылки</a></li>
+                <li class="navigation-button"><i class="fa-solid fa-gear"></i><a href="">Настройки</a></li>
+            </ul>
+        </div>
+        <div class="registration">
+            <header class="header">
+                <input type="text" placeholder="Найти проект или заказчика" class="search">
+                <div class="account">
+                    <div class="account-item"><i class="fa-solid fa-bell"></i></div>
+                    <div class="account-item"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="account-item"><i class="fa-solid fa-user"></i></div>
+                    <div class="account-item"><img src="img/my.jpg" alt="ваше фото" class="photo"></div>
+                    <p class="name">Вохмин Кирилл</p>
+                </div>
+            </header>
+            <div class="profile">
+                <div class="profile-item">
+                    <div class="block-navigation">Настройки профиля
+                        <p class="block-navigation__text">Заполните информацию о себе</p>
+                    </div>
+                    <div class="block-navigation">Уведомления
+                        <p class="block-navigation__text">Прочтите сообщения от заказчиков</p>
+                    </div>
+                    <div class="block-navigation">Данные о проектах
+                        <p class="block-navigation__text">Просмотрите статус выполнения проектов</p>
+                    </div>
+                    <div class="block-navigation">Пароль и безопасность
+                        <p class="block-navigation__text">Задайте или измените пароль</p>
+                    </div>
+                </div>
+                <div class="profile-item">
+                    <div class="avatar">
+                        <div class="account-item"><img src="img/men.jpg" alt="" class="photo-ac"></div>
+                        <div class="block-avatar">Загрузить новое фото
+                            <p class="block-avatar__text">Вы можете загрузить изображение размером не более 10МБ</p>
+                        </div>
+                            <input class="account-file" type="file" name="photo" accept="image/jpeg, image/png, image/webp">
+                        <button class="avatar-button">
+                            Сохранить
+                        </button>
+                    </div>
+                    <form action="" class="
+                    information">
+                        <p class="info">Заполните информацию о себе</p>
+                        <div class="form__block">
+                            <div class="form_block-container">
+                                <div class="form__block-item">
+                                    <label for="name">Имя Фамилия*</label>
+                                    <input class="fname" type="text" name="name" placeholder="Иван Иванов" required>
+                                </div>
+                                <div class="form__block-item">
+                                    <label for="email">Email*</label>
+                                    <input class="email" type="email" name="email" placeholder="mail@mail.ru" required>
+                                </div>
+                            </div>
+                            <div class="form_block-container">
+                                <div class="form__block-item">
+                                    <label for="country">Страна</label>
+                                    <select class="country" name="country" placeholder="Россия" >
+                                        <option value="Russia">Россия</option>
+                                        <option value="Belarusian">Белорусия</option>
+                                        <option value="Kazakhstan">Казахстан</option>
+                                    </select>
+                                </div>
+                                <div class="form__block-item">
+                                    <label for="city">Город</label>
+                                    <select class="city" name="city"  placeholder="Екатеринбург">
+                                        <option value="Ekaterinburg">Екатеринбург</option>
+                                        <option value="Moscow">Москва</option>
+                                        <option value="Perm">Пермь</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form_block-container">
+                                <div class="form__block-item">
+                                    <label for="Address">Адрес проживания</label>
+                                    <input class="address" type="text" name="Address" placeholder="Иван Иванов">
+                                </div>
+                            </div>
+                            <label>Отметьте какими технологиями/языками вы владеете HTML</label>
+                            <div class="form_block-checkbox">
+                                <div>
+                                    <input type="checkbox">
+                                    CSS
+                                </div>
+                                
+                                <div>
+                                    <input type="checkbox">
+                                    JavaScript
+                                </div>
+                                
+                                <div>
+                                    <input type="checkbox">
+                                    SASS
+                                </div>
+                                
+                                <div>
+                                    <input type="checkbox">
+                                    React
+                                </div>
+                                
+                                <div>
+                                    <input type="checkbox">
+                                    Phyton
+                                </div>
+                                
+                                <div>
+                                    <input type="checkbox">
+                                    MySQL
+                                </div>
+                                
+                                <div>
+                                    <input type="checkbox">
+                                    Wordpress
+                                </div>
+                                
+                                <div>
+                                    <input type="checkbox">
+                                    Webpack
+                                </div>
+                                
+                                <div >
+                                    <input type="checkbox">
+                                    Gulp
+                                </div>
+                                
+                                <div >
+                                    <input type="checkbox">
+                                    Node
+                                </div>
+                                
+                            </div>
+                            <div class="form__block-text">
+                                <label for="competishin">Ваши компетенции</label>
+                                <textarea name="competishin" id="competishin" rows="5" cols="140" placeholder="Опишите какими навыками вы владеете, какие проекты и за какое время вы выполнили" class="text-field"></textarea>
+                            </div>
+                            <input type="button" value="Обновить информацию" class="ubdate-b">
+                        </input>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weblance</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f2cc8d7f38.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="container-1">
+        <h1 class="sitetitle">weblance</h1>
+        <nav class="navigation">
+            <li class="navigation__item"><a href="" class="navigation__item-link"><i class="fa-solid fa-file-lines"></i>Портфолио</a></li>
+            <li class="navigation__item"><a href="" class="navigation__item-link"><i class="fa-solid fa-message"></i>Общение</a></li>
+            <li class="navigation__item hover"><a href="" class="navigation__item-link"><i class="fa-solid fa-user"></i>Профиль</a></li>
+            <li class="navigation__item"><a href="" class="navigation__item-link"><i class="fa-solid fa-link"></i>Ссылки</a></li>
+            <li class="navigation__item"><a href="" class="navigation__item-link"><i class="fa-solid fa-gear"></i>Настройки</a></li>
+        </nav>
+    </section>
+    <section class="content">
+        <header class="header">
+            <input type="text" placeholder="Найти проект или заказчика" class="search">
+            <ul class="user">
+                <li class="user__item"><a href="" class="user__item-link border"><i class="fa-solid fa-bell"></i></a></li>
+                <li class="user__item"><a href="" class="user__item-link border"><i class="fa-solid fa-envelope"></i></a></li>
+                <li class="user__item"><a href="" class="user__item-link border"><i class="fa-solid fa-user"></i></a></li>
+                <li class="user__item-photo"><a href="" class="user__item-link"><img src="img/IMG_20241206_110958_109.jpg" alt="" class="user__logo"></a></li>
+                <li class="user__item"><a href="" class="user__item-link">Останин Артём</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <section class="user__list">
+                <ul class="list">
+                    <li class="list__item">
+                        <h3 class="list__item-title">Настройки профиля</h3>
+                        <p class="list__item-text">Заполните информацию о себе</p>
+                    </li>
+                    <li class="list__item">
+                        <h3 class="list__item-title">Уведомления</h3>
+                        <p class="list__item-text">Прочтите сообщения от заказчиков</p>
+                    </li>
+                    <li class="list__item">
+                        <h3 class="list__item-title">Данные о проектах</h3>
+                        <p class="list__item-text">Просмотрите статус выполнения проектов</p>
+                    </li>
+                    <li class="list__item">
+                        <h3 class="list__item-title">Пароль и безопасность</h3>
+                        <p class="list__item-text">Задайте или измените пароль</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="container__main">
+                <div class="photo">
+                    <img src="img/men.jpg" alt="" class="photo__men">
+                    <div class="downloud">
+                        <h3 class="photo__title">Загрузить новое фото</h3>
+                        <p class="photo__text">Вы можете загрузить изображение размером не более 10МБ</p>
+                    </div>
+                    <input type="file" id="photo" accept="image/jpeg, image/png, image/webp" class="calss">
+                    <button class="baton">Сохранить</button>
+                </div>
+                <div class="form__block">
+                    <form class="form">
+                        <h2 class="form__title">Заполните информацию о себе</h2>
+                        <div class="form__block-item">
+                            <label for="name">Имя Фамилия*</label>
+                            <input type="text" id="name" placeholder="Иван Иванов" required class="input">
+                        </div>
+                        <div class="form__block-item">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" placeholder="mail@mail.ru" required class="input">
+                        </div>
+                        <div class="form__block-item">
+                            <label for="country" class="country-title">Страна</label>
+                            <select name="country" id="country" class="country" class="input">
+                                <option value="ru">Россия</option>
+                                <option value="be">Белоруссия</option>
+                                <option value="kz">Казахстан</option>
+                            </select>
+                        </div>
+                        <div class="form__block-item">
+                            <label for="city" class="city-title">Город</label>
+                            <select name="city" id="city" class="city" class="input">
+                                <option value="ekb">Екатеринбург</option>
+                                <option value="msk">Москва</option>
+                                <option value="pe">Пермь</option>
+                            </select>
+                        </div>
+                        <div class="form__block-item">
+                            <label for="adress">Адрес проживания</label>
+                            <input type="text" id="adress" placeholder="Иван Иванов" class="input">
+                        </div>
+                        <div class="form__block-row">
+                            <label for="adress">Отметьте какими технологиями/языками вы владеете HTML</label>
+                            <div class="row">
+                                <div class="row-item">
+                                    <input type="checkbox">
+                                    <span class="call">CSS</span>
+                                </div>
+                                
+                                <div class="row-item">
+                                    <input type="checkbox">
+                                    <span class="call">JavaScript</span>
+                                </div>
+                                
+                                <div class="row-item">
+                                    <input type="checkbox">
+                                    <span class="call">SASS</span>
+                                </div>
+                                
+                                <div class="row-item">
+                                    <input type="checkbox">
+                                    <span class="call">React</span>
+                                </div>
+                                
+                                <div class="row-item">
+                                    <input type="checkbox">
+                                    <span class="call">Phyton</span>
+                                </div>
+                                
+                                <div class="row-item">
+                                    <input type="checkbox">
+                                <span class="call">MySQL</span>
+                                </div>
+                                
+                                <div class="row-item">
+                                    <input type="checkbox">
+                                    <span class="call">Wordpress</span>
+                                </div>
+                                
+                                <div class="row-item">
+                                    <input type="checkbox">
+                                    <span class="call">Webpack</span>
+                                </div>
+                                
+                                <div class="row-item">
+                                    <input type="checkbox">
+                                    <span class="call">Gulp</span>
+                                </div>
+                                
+                                <div class="row-item">
+                                    <input type="checkbox">
+                                    <span class="call">Node</span>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="form__block-item-competishin">
+                                <label for="competishin" class="competishin">Ваши компетенции</label>
+                                <textarea name="competishin" id="competishin" rows="5" cols="122" placeholder="Опишите какими навыками вы владеете, какие проекты и за какое время вы выполнили" class="input-area"></textarea>
+                            </div>
+                            <input type="button" value="Обновить информацию" class="baton">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+
+        </footer>        
+    </section>
+
+</body>
+</html>
